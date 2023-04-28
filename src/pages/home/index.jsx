@@ -2,6 +2,8 @@ import Navbar from "@/components/navbar/Navbar";
 import styles from "./home.module.scss";
 import Sidebar from "@/components/sidebar/Sidebar";
 import Widget from "@/components/widget/Widget";
+import Featured from "@/components/featured/Featured";
+import Chart from "@/components/chart/Chart";
 
 function Home() {
   return (
@@ -11,10 +13,14 @@ function Home() {
         <Navbar />
 
         <div className={styles.widgets}>
-          <Widget />
-          <Widget />
-          <Widget />
-          <Widget />
+          <Widget type="user" />
+          <Widget type="order" />
+          <Widget type="earning" />
+          <Widget type="balance" />
+        </div>
+        <div className={styles.charts}>
+          <Featured />
+          <Chart />
         </div>
       </div>
     </div>
