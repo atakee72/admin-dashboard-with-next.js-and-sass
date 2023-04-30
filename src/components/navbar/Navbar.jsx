@@ -40,11 +40,12 @@ function Navbar() {
           </div>
           <div className={styles.item}>
             <Image
-              // src="https://imgrosetta.mynet.com.tr/file/15283364/15283364-700x400.jpg"
-              src="/public/My_Fair_Lady.png"
+              src="https://imgrosetta.mynet.com.tr/file/15283364/15283364-700x400.jpg"
+              // src="/public/My_Fair_Lady.png"
               width={30}
               height={30}
               className={styles.avatar}
+              alt="user picture"
             />
           </div>
         </div>
