@@ -4,13 +4,11 @@ import Datatable from "@/components/datatable/Datatable";
 
 function List() {
   return (
-    <Layout>
-      <div className={styles.list}>
-        <div className={styles.listContainer}>
-          <Datatable />
-        </div>
+    <div className={styles.list}>
+      <div className={styles.listContainer}>
+        <Datatable />
       </div>
-    </Layout>
+    </div>
   );
 }
 

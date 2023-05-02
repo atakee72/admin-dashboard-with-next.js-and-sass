@@ -11,12 +11,15 @@ import WebStoriesOutlinedIcon from "@mui/icons-material/WebStoriesOutlined";
 import SettingsSuggestOutlinedIcon from "@mui/icons-material/SettingsSuggestOutlined";
 import AccountBoxOutlinedIcon from "@mui/icons-material/AccountBoxOutlined";
 import ExitToAppOutlinedIcon from "@mui/icons-material/ExitToAppOutlined";
+import Link from "next/link";
 
 function Sidebar() {
   return (
     <div className={styles.sidebar}>
       <div className={styles.top}>
-        <span className={styles.logo}>ATAKEE</span>
+        <Link href={"/home"} style={{ textDecoration: "none" }}>
+          <span className={styles.logo}>atakeedmin</span>
+        </Link>
       </div>
       <hr />
       <div className={styles.center}>
@@ -30,7 +33,10 @@ function Sidebar() {
 
           <li>
             <PersonOutlineOutlinedIcon className={styles.icon} />
-            <span>Users</span>
+            <Link href={"/list"} style={{ textDecoration: "none" }}>
+              {" "}
+              <span>Users</span>
+            </Link>
           </li>
           <li>
             <InventoryOutlinedIcon className={styles.icon} />

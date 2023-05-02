@@ -19,9 +19,9 @@
             border: 0.5 solid lightgray;
             padding: 3px;
 
-            .input{
-                bottom: none;
-                outline: none;
+            input{
+                border: none;
+                border-bottom: 1px solid gray;
                 background: transparent;
 
                 &::placeholder{

@@ -12,6 +12,7 @@ module.exports = {
       "m.media-amazon.com",
       "imgrosetta.mynet.com.tr",
       "images.pexels.com",
+      "icon-library.com",
     ],
   },
 };

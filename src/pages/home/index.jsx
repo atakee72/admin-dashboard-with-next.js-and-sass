@@ -9,9 +9,9 @@ import Table from "@/components/table/Table";
 function Home() {
   return (
     <div className={styles.home}>
-      <Sidebar />
+      {/* <Sidebar /> */}
       <div className={styles.homeContainer}>
-        <Navbar />
+        {/* <Navbar /> */}
 
         <div className={styles.widgets}>
           <Widget type="user" />
@@ -21,7 +21,7 @@ function Home() {
         </div>
         <div className={styles.charts}>
           <Featured />
-          <Chart />
+          <Chart title=" Last 6 Months (Revenue)" aspect={2 / 1} />
         </div>
         <div className={styles.listContainer}>
           <div className={styles.listTitle}>Latest Transactions</div>
